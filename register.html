@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+    <title>Pet Salon</title>
+</head>
+<body>
+        <header class="site-in">
+                <h1 class="banner">Fashion Pets</h1>
+                <div class="menu">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="register.html">Register</a>
+                    </nav>
+                </div>
+            </header>
+        
+            <main class="main-in">
+                <div class="img-location">
+                    <img class="img-logo-register" src="cartoonPets.jpg" alt="pet cartoon">
+                    <div class="info"></div>
+                </div>
+                <div class="register-form">
+                        <!-- name, age, type, gender, breed, service, ownerName, contactPhone -->
+                    <form id="petInput" action="#">
+                        <p id="petInputBox">Name: <input type="text" id="name" placeholder="Pet's Name"></p>
+                        <p id="petInputBox">Age: <input type="text" name="age" id="age" placeholder="Pet's Age"></p>
+                        <p id="petInputBox">Type: <select name="type" id="type">
+                                <option value="" disabled selected>----Select Pet Type----</option>
+                                <option value="Bird">Bird</option>
+                                <option value="Cat">Cat</option>
+                                <option value="Dog">Dog</option>
+                                <option value="Hamster">Hamster</option>
+                                <option value="Parrot">Parrot</option></select>
+                        </p>
+                        <p id="petInputBox">Gender: <select name="gender" id = "gender">
+                                <option value="" disabled selected>----Select Gender----</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option></select>
+                        </p>
+                        <p id="petInputBox">Breed: <input type="text" id = "breed" placeholder="Pet's breed"></p>
+                        <p id="petInputBox">Service: <select name = "service" id="service">
+                            <option value="" disabled selected>----Select a service----</option>
+                            <option value="Shower">Shower</option>
+                            <option value="Hair cut">Hair Cut</option>
+                            <option value="Nail Clipping">Nail Clipping</option>
+                            <option value="Full Service">Full Service</option></select>
+                        </p>
+                        <p id="petInputBox">Owner's Name: <input type="text" id = "ownerName"></p>
+                        <p id="petInputBox">Contact Phone: <input type="text" id = "contactPhone"></p>                    
+                    </form>
+                    <input class="btn" type="submit" value="Register" onclick="register();">
+                </div>
+            </main>
+
+            <section class="list-pets">
+                <h2>Registered Pets</h2>
+                <input type="text" id="search" placeholder="Search for names..">
+                <button class="btn" onclick="search();">Search</button>
+                <div>
+                    <table  class="table" id="petTable">
+                        <tr class="header" id="searchPetInfo">
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Type</th>
+                            <th>Gender</th>
+                            <th>Breed</th>
+                            <th>Service</th>
+                            <th>Owner's Name</th>
+                            <th>Contact Phone</th>
+                            <th>Option</th>
+                        </tr>
+                        <tbody id="listBody">
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        
+            <footer class="footer-in">
+                <div class="menu-footer">
+                        <nav>
+                                <a href="index.html">Home</a>
+                                <a href="#">About</a>
+                                <a href="register.html">Register</a>
+                        </nav>
+                </div>
+                <div class="info">
+                    
+                </div>
+            </footer>
+    <script src="script.js"></script>
+</body>
+</html>

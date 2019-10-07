@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Manjari', sans-serif;
+}
+
+.site-in{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(94, 175, 255);
+    height: 20vh;
+    color: aliceblue;
+}
+
+.banner{
+    margin: 20px 40px;
+    font-size: 4rem;
+}
+
+#petInputBox{
+    text-align: justify;
+    display: flex;
+    justify-content: left;
+    
+}
+
+p{
+    text-align: center;
+}
+
+.menu nav a{
+    color: aliceblue;
+    display: inline-block;
+    background: rgb(253, 86, 217);
+    margin: 10px 5px;
+    font-size: 20px;
+    font-style: none;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.main-in{
+    height: 60vh;
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-location{
+    text-align: center;
+}
+
+.img-logo{
+    width: 400px;
+}
+
+.img-logo-register{
+    width: 300px;
+    text-align: center;
+}
+
+.list-pets{
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+}
+
+h2{
+    background: rgb(94, 175, 255);
+    color: black;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+.footer-in{
+    background: black;
+    color: aliceblue;
+    font-size: 14px;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.menu-footer nav{
+    text-align: center;
+}
+
+.menu-footer nav a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-style: none;
+    margin: 20px;
+    display: inline-block;
+}
+
+
+.register-form{
+    margin: 0px;}
+
+input[type="text"]{
+    width: 350px;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid rgb(94, 175, 255);
+}
+
+.btn{
+    background: rgb(94, 175, 255);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Manjari', sans-serif;
+}
+
+.list-pets{
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.selected{
+    background: rgb(255, 94, 247);
+}
+
+.notselected{
+    background: rgba(0, 0, 0, 0.5);
+}
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    font-family: 'Manjari', sans-serif;
+}
+
+#header{
+    padding: 50px;
+    font-size: 4rem;
+}
+
+#storeInfo{
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+}
+
+#footer{
+    margin-top: 50px;
+} */
